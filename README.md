@@ -1,11 +1,10 @@
-Sure, here's the updated README with a TODO section that suggests getting numbers from GitHub to 
+Certainly! Here is the updated README with the sample PNGs included:
+
+---
+
 # SDLC Efficiency Calculator
 
 Welcome to the SDLC Efficiency Calculator, a simple yet powerful tool to demonstrate the critical importance of maintaining a balanced ratio of developers to QA engineers. This project aims to enlighten those who believe that throwing more development resources at a problem can magically ensure quality.
-
-![Sampe 1](sample1.png)
-![Sample 2](sample2.png)
-![Sample 3](sample3.png)
 
 ## Introduction
 
@@ -20,6 +19,37 @@ This calculator is designed to help visualize the impact of an imbalanced develo
 - **Assess QA Capacity**: Evaluate whether your QA team can keep up with the output.
 - **Defect Detection Efficiency**: Visualize how well your QA team can catch defects before they hit production.
 - **Graphical Visualization**: Generate a DOT file for visualizing the efficiency using Graphviz.
+
+## Mathematical Notation
+
+Given the following parameters:
+- \( D \): Number of developers
+- \( Q \): Number of QA engineers
+- \( C \): Average code output per developer per week (units of code)
+- \( R \): Defect rate (defects per unit of code)
+- \( QC \): QA capacity per QA engineer per week (units of code)
+
+The following calculations are performed:
+
+1. **Total Code Output per Week**:
+   \[
+   \text{Total Code Output} = D \times C
+   \]
+
+2. **Total Defects per Week**:
+   \[
+   \text{Total Defects} = \text{Total Code Output} \times R
+   \]
+
+3. **Total QA Capacity per Week**:
+   \[
+   \text{Total QA Capacity} = Q \times QC
+   \]
+
+4. **Defect Detection Efficiency**:
+   \[
+   \text{Defect Detection Efficiency} = \frac{\text{Total QA Capacity}}{\text{Total Code Output}}
+   \]
 
 ## Usage
 
@@ -128,6 +158,12 @@ dot -Tpng sdlc_efficiency.dot -o sdlc_efficiency.png
 ```
 
 This command will generate a PNG image (`sdlc_efficiency.png`) of the graph.
+
+### Sample Visualizations
+
+![Sample 1](sample1.png)
+![Sample 2](sample2.png)
+![Sample 3](sample3.png)
 
 ## Important Notes
 
