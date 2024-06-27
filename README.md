@@ -1,7 +1,4 @@
-Certainly! Here is the updated README with the sample PNGs included:
-
----
-
+Sure, here's the updated README with a TODO section that suggests getting numbers from GitHub to 
 # SDLC Efficiency Calculator
 
 Welcome to the SDLC Efficiency Calculator, a simple yet powerful tool to demonstrate the critical importance of maintaining a balanced ratio of developers to QA engineers. This project aims to enlighten those who believe that throwing more development resources at a problem can magically ensure quality.
